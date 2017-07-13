@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Miracle od Asia</title>
+    <title>Miracle of Asia</title>
 
     <!-- Css -->
     <link href="css/lib.min.css" rel="stylesheet"/>
@@ -217,7 +217,7 @@
                   <button class="btn btn-default" role="button" id="editroom">Edit</button>
                   <button class="btn btn-default" role="button">Delete</button>
                   <button class="btn btn-primary btn-file1 col-md-4 col-sm-4 col-xs-4">
-                                        <i class="fa fa-camera" aria-hidden="true"></i>&nbsp; Browse <input type="file" id="roomhome"/>
+                                        <i class="fa fa-camera" aria-hidden="true"></i>&nbsp; Browse <input type="file"  ng-model="room_Browse" id="roomhome" />
                                     </button>
             
               </div>
@@ -261,11 +261,11 @@
                 <div class="col-sm-12 col-xs-12 paddind0">
                   <div class="col-sm-6 col-xs-12  form-group paddind0">
                 <span> Number of rooms (of this type)</span>
-                <input type="text" name="numberofroom" class="form-control"/>
+                <input type="text" ng-modal="rooms-number_of_room" name="numberofroom" class="form-control"/>
                   </div>
                    <div class="col-sm-6 col-xs-12 form-group">
                 <span>Smoking policy</span>
-                <input type="text" name="smokingPolicy" class="form-control"/>
+                <input type="text" ng-modal="rooms_Smoking policy" name="smokingPolicy" class="form-control"/>
                   </div>
               </div>
             </div>
@@ -276,7 +276,7 @@
               <div class="col-sm-4 col-xs-12 form-group paddind0">
                
                 <label> How many guests can stay in this room?</label>
-                <input type="text" name="" class="form-control"/>
+                <input type="text" name="" ng-modal="rooms_guests_room" class="form-control"/>
               </div>
                 <div class="alert alert-success col-md-12 col-xs-12 col-sm-12 actcolor" >
                   <h2>Standard Arrangement</h2>
@@ -325,7 +325,7 @@
                <div class="form-group"><span>Price for 1 person</span>
                 <div class="input-group col-sm-4 col-xs-12">
                   <div class="input-group-addon">US$/per night</div>
-                  <input type="number" class="form-control" name="pernight" placeholder="Amount"/>
+                  <input type="number" class="form-control" ng-model="rooms_amount" name="pernight" placeholder="Amount"/>
                  
                 </div><br/>
                  <p>This rate will automatically apply to all future preloaded dates on your 
@@ -375,12 +375,12 @@
               <div class="col-sm-6 col-xs-12 form-group paddind0">
                 
               <span for="disabledTextInput">Custom name (optional)</span>
-                 <input type="text" name="customerName" class="form-control"/>
+                 <input type="text" ng-model="rooms_customerName" name="customerName" class="form-control"/>
               </div>
                 <div class="col-sm-12 col-xs-12 paddind0">
                   <div class="col-sm-6 col-xs-12  form-group paddind0">
               <span> Number of rooms (of this type)</span>
-                <input type="text" name="numberofroom" class="form-control"/>
+                <input type="text"  ng-model="rooms_number_of_room"name="numberofroom" class="form-control"/>
               </div>
               <div class="col-sm-6 col-xs-12 form-group">
                 <span>Smoking policy</span>
@@ -397,7 +397,7 @@
               <div class="col-sm-4 col-xs-12 form-group paddind0">
                
                 <label> How many guests can stay in this room?</label>
-                <input type="text" name="" class="form-control"/>
+                <input type="text"  ng-model="rooms_guests_room" name="" class="form-control"/>
               </div>
                 <div class="alert alert-success col-md-12 col-xs-12 col-sm-12 actcolor" >
                   <h2>Standard Arrangement</h2>
@@ -446,7 +446,7 @@
                <div class="form-group"><span>Price for 1 person</span>
                 <div class="input-group col-sm-4 col-xs-12">
                   <div class="input-group-addon">US$/per night</div>
-                  <input type="number" class="form-control" placeholder="Amount"/>
+                  <input type="number"  ng-model="room_per_night" class="form-control" placeholder="Amount"/>
                  
                 </div><br/>
                  <span>This rate will automatically apply to all future preloaded dates on your 
@@ -455,12 +455,13 @@
                      <div class="col-sm-12 col-xs-12 paddind0 form-group">
                     <h4 >Is breakfast available to guests?</h4>
             <div class="col-md-12 col-sm-12 col-xs-12  paddind0">
-               <label class="spa1" id="no"><input type="radio" name="breakfast" /><span > No</span></label>
-               <label class="spa1" id="yes"><input type="radio" Name="breakfast"/ > <span >Yes</span></label>
+               <label class="spa1" id="no"><input type="radio" name="breakfast" ng-model="rooms_breakfast"/><span > No</span></label>
+               <label class="spa1" id="yes"><input type="radio" Name="breakfast" ng-model="rooms
+               _breakfast"/ > <span >Yes</span></label>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12  paddind0">
                <h4 >Discount for 1 person</h4>
-               <div class="col-md-3 col-sm-3 col-xs-12  paddind0"><input type="text" Name="breakfast" class="form-control"/ > </div>
+               <div class="col-md-3 col-sm-3 col-xs-12  paddind0"><input type="text" Name="breakfast" ng-model="rooms_discount_for_1_person" class="form-control"/ > </div>
                <div class="col-md-2 col-sm-2 col-xs-12 ">
                   <select class="form-control">
                   <option>%</option>

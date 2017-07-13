@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Miracle od Asia</title>
+    <title>Miracle of Asia</title>
 
     <!-- Css -->
     <link href="css/lib.min.css" rel="stylesheet"/>
@@ -199,7 +199,7 @@
      <div class="container item-container">  
       <div class="row">
         <div class="col-md-10 col-sm-10">
-          <div class="col-md-12 col-sm-12 col-xs-12 hh paddind0"><h2>Miracle Hostels -Tangalle <span class="label label-success">open/Bookable</span></h2></div>
+          <div class="col-md-12 col-sm-12 col-xs-12 hh paddind0"><h2> Miracle Hostels -Tangalle <span class="label label-success">open/Bookable</span></h2></div>
         </div>
         <div class="col-md-10 col-sm-10 col-xs-10  ">
           <div class="col=md-12 col-sm-12 paddind0  no-padding">
@@ -220,11 +220,11 @@
                 <div class="paddind0 checkin col-md-12 col-xs-12 col-sm-12">
               <div class="form-group col-xs-12 col-sm-4">
                 <span>Start date</span>
-                <input class="form-control date" type="text" name="" value="" placeholder="DD/MM/YYYY" id=""/>
+                <input class="form-control date" ng-model="rate_start_date" type="text" name="" value="" placeholder="DD/MM/YYYY" id=""/>
               </div>
               <div class="form-group col-xs-12 col-sm-4">
                 <span>End date</span>
-                <input class="form-control date" type="text" name="" placeholder="DD/MM/YYYY" value="" id=""/>
+                <input class="form-control date" ng-model="rate_end_date" type="text" name="" placeholder="DD/MM/YYYY" value="" id=""/>
               </div>
                 
                <div class="form-group col-xs-12 col-sm-2">
@@ -258,33 +258,33 @@
               </span>
                <div class="checkbox">
                   <label class="weeklan">
-                    <input type="checkbox" name="su" value="sunday"/> <span class="week1"> Sunday</span>
+                    <input type="checkbox" name="su" value="sunday" ng-model="rate_weekDays"/> <span class="week1"> Sunday</span>
                   </label>
                  
                   <label class="weeklan">
-                    <input type="checkbox" name="mo" value="monday"/><span class="week1">Monday</span>
+                    <input type="checkbox" name="mo" value="monday" ng-model="rate_weekDays" /><span class="week1">Monday</span>
                   </label>
            
                   <label class="weeklan">
-                    <input type="checkbox" name="tu" value="tuesday"/> <span class="week1">Tuesday</span>
+                    <input type="checkbox" name="tu" value="tuesday" ng-model="rate_weekDays" /> <span class="week1">Tuesday</span>
                   </label>
                  
                   <label class="weeklan">
-                    <input type="checkbox" name="wed" value="wednesday"/><span class="week1"> Wednesday</span>
+                    <input type="checkbox" name="wed" value="wednesday" ng-model="rate_weekDays"/><span class="week1"> Wednesday</span>
                   </label>
                   
                  
                </div>
                 <div class="checkbox">
                     <label class="weeklan">
-                    <input type="checkbox" name="thu" value="thursday"/><span class="week1"> Thursday</span>
+                    <input type="checkbox" name="thu" value="thursday"  ng-model="rate_weekDays"/><span class="week1"> Thursday</span>
                   </label>
                   <label class="weeklan">
-                    <input type="checkbox" name="fr" value="friday"/> <span class="week1">Friday</span>
+                    <input type="checkbox" name="fr" value="friday" ng-model="rate_weekDays"/> <span class="week1">Friday</span>
                   </label>
                     
                    <label class="weeklan">
-                    <input type="checkbox" name="sa" value="saturday"/><span class="week1"> Saturday </span>
+                    <input type="checkbox" name="sa" value="saturday" ng-model="rate_weekDays" /><span class="week1"> Saturday </span>
                   </label>
                 </div>
 
@@ -293,12 +293,12 @@
                   <span>Adjust availability</span>
                   <div class="radio">
                     <label>                     
-                      <input type="radio" name="availabil" id="" value="Open" />
+                      <input type="radio" ng-model="room_availability"  name="availabil" id="" value="Open" />
                      Open
                     </label>
                  
                     <label>                     
-                      <input type="radio" name="availabil" id="" value="closed"/ >
+                      <input type="radio" ng-model="room_availability" name="availabil" id="" value="closed"/ >
                      Closed
                     </label>
                   </div>
@@ -337,7 +337,7 @@
                   
                     <div class="input-group ">
                       <div class="input-group-addon">$</div>
-                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount"/>
+                      <input type="text"  ng-model="rate_Price" class="form-control" id="exampleInputAmount" placeholder="Amount"/>
                       
                     </div>
 
@@ -444,7 +444,7 @@
             <form class="form-horizontal">
               <div class="form-group">
                 <div class="col-xs-12">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your E-mail"/>
+                  <input type="email" ng-model="rate_email" class="form-control" id="inputEmail3" placeholder="Enter your E-mail"/>
                 </div>
               </div>
               <div class="form-group">

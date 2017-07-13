@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Miracle od Asia</title>
+    <title>Miracle of Asia</title>
 
     <!-- Css -->
     <link href="css/lib.min.css" rel="stylesheet"/>
@@ -261,7 +261,7 @@
               <legend>Basic information</legend>
               <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Property name</span>
-                <input type="text" name="propertyName" id="" class="form-control"/>
+                <input type="text" ng-model="hotel_property_name" name="propertyName" id="" class="form-control"/>
                
               </div>
                 <div class="col-sm-12 col-xs-12 paddind0">
@@ -371,7 +371,7 @@
 
                <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Property website (optional)</span>
-                <input type="text" name="website" id="" class="form-control"/>
+                <input type="text" ng-model="hotel_Property_website" name="website" id="" class="form-control"/>
                 
               </div>
                <div class="col-sm-12 col-xs-12 paddind0">
@@ -389,24 +389,24 @@
               <legend>Property address</legend>
               <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Contact name</span>
-                <input type="text" name="coName" placeholder="Contact Name" id="" class="form-control"/>
+                <input type="text" ng-model="hotel_Contact_name" name="coName" placeholder="Contact Name" id="" class="form-control"/>
               </div>
 
                <div class="col-sm-12 col-xs-12 form-group paddind0">
                <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Street address</span>
-                <input type="text" name="sAddress" placeholder="Street address" id="" class="form-control"/>
+                <input type="text" ng-model="hotel_street_address" name="sAddress" placeholder="Street address" id="" class="form-control"/>
               </div>
                <div class="col-sm-6 col-xs-12 form-group">
                 <span> Address line 2</span>
-                <input type="text" name="sAddress2" placeholder=" Address line 2" id="" class="form-control"/>
+                <input type="text" ng-model="hotel_address_line " name="sAddress2" placeholder=" Address line 2" id="" class="form-control"/>
               </div>
               </div>  
 
                <div class="col-sm-12 col-xs-12 form-group paddind0">
                <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> City</span>
-                    <input type="" name="city" id="" class="form-control"/>
+                    <input type="" ng-model="hotel_city" name="city" id="" class="form-control"/>
                 
               </div>  
                <div class="col-sm-6 col-xs-12 form-group ">
@@ -661,13 +661,13 @@
               <div class="col-sm-12 col-xs-12 form-group paddind0">
                <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Phone Number</span>
-                <input type="text" name="phone" id="" placeholder="Phone Number" class="form-control"/>
+                <input type="text" ng-model="hotel_phone_number" name="phone" id="" placeholder="Phone Number" class="form-control"/>
                 
               </div>
               <!---->
                <div class="col-sm-6 col-xs-12 form-group ">
                 <span> Email</span>
-                <input type="email" name="email" placeholder="Email" id="" class="form-control"/>
+                <input type="email" ng-model="hotel_E-mail" name="email" placeholder="Email" id="" class="form-control"/>
                 
               </div>
               </div>
@@ -675,16 +675,241 @@
                <div class="col-sm-12 col-xs-12 form-group paddind0">
                <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Postal Code</span>
-                <input type="text" name="postalCode" id="" placeholder="Postal Code" class="form-control"/>
+                <input type="text" ng-model="hotel_Postal_code" name="postalCode" id="" placeholder="Postal Code" class="form-control"/>
+                     
+              </div>
+              <!---->
+              <div class="col-sm-6 col-xs-12 form-group ">
+                <span> fax</span>
+                <input type="email" ng-model="hotel_fax" name="email" placeholder="fax" id="" class="form-control"/>
+                
+              </div>
+                 </div>
+
+
+ <div class="col-sm-12 col-xs-12 form-group paddind0">
+               <div class="col-sm-6 col-xs-12 form-group paddind0">
+                <span> latitude</span>
+                <input type="text" ng-model="hotel_Latitude" name="latitude" id="" placeholder="latitude" class="form-control"/>
                 
               </div>
               <!---->
-              
+               <div class="col-sm-6 col-xs-12 form-group ">
+                <span> longtitude</span>
+                <input type="email" ng-model="hotel_Longtitude" name="longtitude" placeholder="longtitude" id="" class="form-control"/>
+                
               </div>
-              
+               </div>
+
+              <div class="col-sm-12 col-xs-12 paddind0">
+                 <div class="col-sm-8 col-xs-12 form-group paddind0">
+                <span> shortDescription</span>
+               
+                <textarea rows="3" name="short" class="form-control"></textarea>
+                 </div>
+              </div>
+             
+         
             </div>
 
             <!---->
+
+...............................
+
+
+               <div class="thumbnail col=md-12 col-sm-12  col-xs-12 thumbnail services " >
+             
+              <legend>Property services</legend>
+              <div class="col-md-12 col-xs-12 col-sm-12 form-group">
+              <div class="col-md-6 col-sm-6 form-group">
+               <span>service name</span>
+               <input type="text" ng-model="servicesName" class="form-control" name=""/>
+
+               </div>
+               
+<div class="col-md-12 col-md-12 col-sm-12 form-group">
+<div class="col-md-6 col-sm-6 form-group">
+<span>Service Pay</span>
+<div class="radio">
+
+  <input type="radio" ng-model="servicesPay" name="pay"/>
+  <span>yes</span>
+
+
+  <input type="radio" ng-model="servicesPay" name="pay"/>              
+  <span>no</span>
+  </div>
+  </div>
+
+
+      
+<div class="col-sm-6 col-xs-12 form-group ">
+                <span> amount</span>
+                <input type="amount" ng-model="serviceAmount" name="" placeholder="" id="" class="form-control"/>
+                
+              </div>
+              </div>
+</div>       
+               
+
+
+              <div class="col-md-12"></div>
+
+              
+
+
+
+<div class="col-sm-12 col-xs-12 form-group paddind0">
+               <div class="col-sm-4 col-xs-12  nmppaddind0">
+                <span> pay type</span>
+                
+                    <select  name="" id="langu" class="form-control">
+                      <option value="" ></option>
+                      <option value="" ></option>
+                      <option value="" ></option>
+                      <option value="" ></option>
+                    </select>
+                
+              </div>     
+              <div class="col-sm-5 col-xs-12 form-group  ">
+                
+                  <div class="col-sm-5 col-xs-12 form-group  Spoken"> <span id="lan" class="pay"> Languages Spoken </span></div>  
+              </div>                         
+                                   
+                             
+               </div>
+
+
+
+
+<div class="col-sm-12 col-xs-12 form-group paddind0">
+               <div class="col-sm-4 col-xs-12  nmppaddind0">
+                <span> units</span>
+                
+                    <select  name="" id="langu" class="form-control">
+                      <option value="" ></option>
+                      <option value="" ></option>
+                      <option value="" ></option>
+                      <option value="" ></option>
+                    </select>
+                
+              </div>     
+              <div class="col-sm-5 col-xs-12 form-group  ">
+                
+                  <div class="col-sm-5 col-xs-12 form-group  Spoken"> <span id="lan" class="pay"> Languages Spoken </span></div>  
+              </div>                         
+                                   
+                      
+
+               </div>
+
+                 <div class="col-sm-12 col-xs-12 paddind0">
+                 <div class="col-sm-8 col-xs-12 form-group paddind0">
+                <span> shortDescription</span>
+               
+                <textarea rows="3" name="short" class="form-control"></textarea>
+                 </div>
+              </div>
+
+</div>
+
+//////////////////////////////////////////////*
+
+
+<div class="thumbnail col=md-12 col-sm-12  col-xs-12 thumbnail services " >
+<legend>Property facilities</legend>
+
+<div class="col-md-12 col-xs-12 col-sm-12 form-group">
+              <div class="col-md-6 col-sm-6 form-group">
+               <span>facilities name</span>
+               <input type="text" ng-model="facilitiesName" name="" class="form-control" name=""/>
+
+               </div>
+<div class="col-sm-6 col-xs-12 form-group ">
+                <span> code</span>
+                <input type="code" ng-model="hotel_E-mail" name="code" placeholder="code" id="" class="form-control"/>
+                
+              </div>
+
+
+
+               <div class="col-sm-12 col-xs-12 form-group paddind0">
+               <div class="col-sm-6 col-xs-12 form-group paddind0">
+                <span> thumbnail</span>
+                <input type="text" ng-model="facilities_Thumbnail" name="thumbnail" id="" placeholder="thumbnail" class="form-control"/>
+                
+              </div>
+              <!---->
+               <div class="col-sm-6 col-xs-12 form-group ">
+                <span> openTime</span>
+                <input type="email" ng-model="facilities_OpenTime" name="email" placeholder="openTime" id="" class="form-control"/>
+                
+              </div>
+               <div class="col-sm-12 col-xs-12 form-group paddind0">
+               <div class="col-sm-6 col-xs-12 form-group paddind0">
+                <span> close time</span>
+                <input type="text" ng-model="facilities_Closetime" name="closetime" id="" placeholder="closetime" class="form-control"/>
+                
+              </div>
+              </div>
+              <div class="col-sm-12 col-xs-12 paddind0">
+                 <div class="col-sm-8 col-xs-12 form-group paddind0">
+                <span> shortDescription</span>
+               
+                <textarea rows="3" name="short" class="form-control"></textarea>
+                 </div>
+              </div>
+
+</div>
+
+</div>
+<div class="thumbnail col=md-12 col-sm-12  col-xs-12 thumbnail services " >
+<legend>social Network</legend>
+<div class="col-md-12 col-xs-12 col-sm-12 form-group">
+              <div class="col-md-6 col-sm-6 form-group">
+               <span>name</span>
+               <input type="text" ng-model="name" class="form-control" name=""/>
+
+               </div>
+               
+<div class="col-sm-6 col-xs-12 form-group ">
+                <span> social Url</span>
+                <input type="socialUrl" ng-model="hotel_E-mail" name="socialUrl" placeholder="socialUrl" id="" class="form-control"/>
+                
+              </div>
+              </div>
+
+</div>
+
+<div class="thumbnail col=md-12 col-sm-12  col-xs-12 thumbnail services " >
+<legend>Resturent Types</legend>
+<div class="col-md-12 col-xs-12 col-sm-12 form-group">
+              <div class="col-md-6 col-sm-6 form-group">
+               <span>name</span>
+               <input type="text" ng-model="name" class="form-control" name=""/>
+
+               </div>
+               
+<div class="col-sm-6 col-xs-12 form-group ">
+                <span> openTime</span>
+                <input type="openTime" ng-model="openTime" name="openTime" placeholder="opentime" id="" class="form-control"/>
+                
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!--<div class="thumbnail col=md-12 col-sm-12  col-xs-12 thumbnail services " >
              
               <legend>Property address</legend>
@@ -971,7 +1196,7 @@
               <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Property name</span>
              
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" value="Batti Beach Resort" />
+                <input type="text" ng-model="hotel_property_name" id="disabledTextInput" class="form-control" placeholder="Disabled input" value="Batti Beach Resort" />
                
                
               </div>
@@ -1102,24 +1327,24 @@
               <legend>Property address</legend>
               <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Contact name</span>
-                <input type="text" name="coName" placeholder="Contact Name" id="" class="form-control"/>
+                <input type="text" ng-model="hotel_contact_name" name="coName" placeholder="Contact Name" id="" class="form-control"/>
               </div>
 
                <div class="col-sm-12 col-xs-12 form-group paddind0">
                <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Street address</span>
-                <input type="text" name="sAddress" placeholder="Street address" id="" class="form-control"/>
+                <input type="text" ng-model="hotel_street_address" name="sAddress" placeholder="Street address" id="" class="form-control"/>
               </div>
                <div class="col-sm-6 col-xs-12 form-group">
                 <span> Address line 2</span>
-                <input type="text" name="sAddress2" placeholder=" Address line 2" id="" class="form-control"/>
+                <input type="text" ng-model="hotel_address_line2"name="sAddress2" placeholder=" Address line 2" id="" class="form-control"/>
               </div>
               </div>  
 
                <div class="col-sm-12 col-xs-12 form-group paddind0">
                <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> City</span>
-                    <input type="" name="city" id="" class="form-control"/>
+                    <input type="" ng-model="hotel_city" name="city" id="" class="form-control"/>
                 
               </div>  
                <div class="col-sm-6 col-xs-12 form-group ">
@@ -1374,13 +1599,13 @@
               <div class="col-sm-12 col-xs-12 form-group paddind0">
                <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Phone Number</span>
-                <input type="text" name="phone" id="" placeholder="Phone Number" class="form-control"/>
+                <input type="text" ng-model="hotel_phone_number" name="phone" id="" placeholder="Phone Number" class="form-control"/>
                 
               </div>
               <!---->
                <div class="col-sm-6 col-xs-12 form-group ">
                 <span> Email</span>
-                <input type="email" name="email" placeholder="Email" id="" class="form-control"/>
+                <input type="email" ng-model="hotel_E-mail" name="email" placeholder="Email" id="" class="form-control"/>
                 
               </div>
               </div>
@@ -1388,7 +1613,7 @@
                <div class="col-sm-12 col-xs-12 form-group paddind0">
                <div class="col-sm-6 col-xs-12 form-group paddind0">
                 <span> Postal Code</span>
-                <input type="text" name="postalCode" id="" placeholder="Postal Code" class="form-control"/>
+                <input type="text" ng-model="hotel_Postal_code" name="postalCode" id="" placeholder="Postal Code" class="form-control"/>
                 
               </div>
               <!---->
