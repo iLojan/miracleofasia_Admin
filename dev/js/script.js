@@ -333,8 +333,18 @@ jQuery.noConflict();
 				$('#hotelmain').hide();
 			});    
 
+// ++++++++
+                 	$("#but").click(function(){
+				
+				
+				var wrappera = $('.viewqr'); 
+				var fieldHTMLa = '<input type="text" name=ssss value=sss id="" class="form-control"/> ';
+                  
+			    $(wrappera).append(fieldHTMLa); 
+				// $("#lan").show();
 
-
+      
+			});
 			    //+++++++
 			$("#langu").change(function(){
 				
