@@ -1,0 +1,73 @@
+{
+  "hotel": {
+    "cmId": 0,
+    "name":$scope.pName,
+    "customerHotline": "0758907689",
+    "shortDescription": " ",
+    "longDescription": "Kandy Super Hotel",
+    "website": $scope.website,
+    "termsConditions": "Chrome device management licenses are purchased as an annual subscription for each device you intend to manage. Licenses are automatically assigned to devices when a device is enrolled to the domain and the management policies immediately apply. The subscription for the number of licenses purchased will automatically be renewed at the end of the term. Renewal settings can be changed at anytime during the subscription. designed ",
+    "ownerName": " ",
+    "ownerContact": "081-2219393",
+    "createdUserId": 1,
+    "createdDate": 1497938115219,
+    "modifiedUserId": 0,
+    "modifiedDate": " ",
+    "statusId": 1,
+    "hotelTypeId": 0,
+    "hotelLocation": $scope.typeLocation,
+    "hotelStar": $scope.typeStar,
+    "hotelCustomer": $scope.typeCustomer,
+    "incomeLevel": $scope.typeEconomy,
+    "resturentTypes": 
+      {
+        "name": $scope.resturentName,
+        "description": $scope.resturentDescription,
+        "openTime": $scope.oresturentOpentime,
+        "closingTime": $scope.resturentClosetime,
+        "type": $scope.resturentType,
+        "thumbnail": $scope.resturentThumbnail
+      },
+     
+    
+    "hotelContact": {
+      "contactPerson": $scope.contactName,
+      "contactNumber": $scope.phoneNumber,
+      "email": $scope.hotelEmail,
+      "fax": $scope.hotelFax
+    },
+    "hotelAddress": {
+      "address": $scope.addressLine1,
+      "latitude": $scope.hotelLatitude,
+      "longtitude": $scope.hotelLongtitude,
+      "description": $scope.description
+    },
+    "hotelFacilitiesJs": [
+      {
+        "name": $scope.facilitiesName,
+        "code": $scope.facilitieCode,
+        "descrpion": $scope.facilitieDescription,
+        "thumbnail": $scope.facilitiesThumbnail,
+        "openTime": $scope.facilitiesOpenTime,
+        "closeTime": $scope.facilitiesClosetime
+      }
+    ],
+    "hotelServiceJs": [
+      {
+        "name": $scope.servicesName,
+        "description": " ",
+        "pay": $scope.servicesPay,
+        "amount": $scope.serviceAmount,
+        "payType": $scope.payType,
+        "units": $scope.propertyUnit
+      }
+    ],
+    "socialNetwork": [
+      {
+        "id": 0,
+        "name": $scope.socialName,
+        "socialUrl": $scope.socialUrl
+      }
+    ]
+  }
+}

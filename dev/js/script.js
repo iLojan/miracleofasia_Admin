@@ -57,8 +57,8 @@ jQuery.noConflict();
 					});
 				}
 			});
-            
-		
+
+
 			$('#slick2').slick({
 			//   infinite: false,
 			slidesToShow: 4,
@@ -67,13 +67,7 @@ jQuery.noConflict();
 			autoplaySpeed: 2000
 			});
 
-			
-		
-                                //   $('#menu').slicknav({
-								// 		prependTo:'#demo1'
-					      		// 	});
-
-
+                        
 			$('#lin1').click(function(){
                  $("#sec1").show();
 				 $("#sec2").hide();
@@ -83,7 +77,7 @@ jQuery.noConflict();
 				 $('#lin3').addClass('lin');
 				 $("#lin2").css({'text-decoration': 'none'});
 				 $("#lin3").css({'text-decoration': 'none'});
-				
+
 
 
 			});
@@ -97,32 +91,10 @@ jQuery.noConflict();
 				$("#ada1").hide();
 				$("#ada").show();
 			});
-   
 
 
 
-			//  $("#add-room-type").click(function () {
 
-			// 	   var counter = 2;
-
-			// 			if(counter>10){
-			// 					alert("Only 10 textboxes allow");
-			// 					return false;
-			// 			}
-
-			// 			var newTextBoxDiv = $(document.createElement('div'))
-			// 				.attr("id", 'TextBoxDiv' + counter);
-
-			// 			newTextBoxDiv.after().html('<label>Textbox #'+ counter + ' : </label>' +
-			// 				'<input type="text" name="textbox' + counter +
-			// 				'" id="textbox' + counter + '" value="" >');
-
-			// 			newTextBoxDiv.appendTo("#TextBoxesGroup");
-
-
-			// 			counter++;
-			// 			});
-			
 			$('#lin2').click(function(){
                 $("#sec2").show();
 				$("#sec1").hide();
@@ -141,10 +113,10 @@ jQuery.noConflict();
 			     $('#lin2').addClass('lin');
 				 $('#lin1').addClass('lin');
 				 $("#lin2").css({'text-decoration': 'none'});
-				
+
 
 			});
-			
+
 			$('#yes').click(function(){
 				$('#food').show("slow");
 			});
@@ -161,9 +133,9 @@ jQuery.noConflict();
 			});
 			// calenter
 			$('.date').datepicker();
-			
 
-			
+
+
 			// end
 
 					$("#analytics").click(function(){
@@ -175,15 +147,15 @@ jQuery.noConflict();
 						$("#guest-sub").hide();
 
 					});
-			   
+
 			     $("#finance").click(function(){
                         $("#finance-sub").toggle();
 						$("#anal-sun").hide();
 						$("#rate-sub").hide();
 						$("#property-sub").hide();
 						$("#opportunities-sub").hide();
-						$("#guest-sub").hide();							 
-						 
+						$("#guest-sub").hide();
+
 			   });
 			     $("#rate").click(function(){
                         $("#finance-sub").hide();
@@ -191,7 +163,7 @@ jQuery.noConflict();
 						$("#rate-sub").toggle();
 						$("#property-sub").hide();
 						$("#opportunities-sub").hide();
-						$("#guest-sub").hide();						 
+						$("#guest-sub").hide();
 			   });
 			      $("#property").click(function(){
                         $("#finance-sub").hide();
@@ -199,7 +171,7 @@ jQuery.noConflict();
 						$("#rate-sub").hide();
 						$("#property-sub").toggle();
 						$("#opportunities-sub").hide();
-						$("#guest-sub").hide();						 
+						$("#guest-sub").hide();
 			   });
 			      $("#opportunities").click(function(){
                         $("#finance-sub").hide();
@@ -207,7 +179,7 @@ jQuery.noConflict();
 						$("#rate-sub").hide();
 						$("#property-sub").hide();
 						$("#opportunities-sub").toggle()
-						$("#guest-sub").hide();						 
+						$("#guest-sub").hide();
 			   });
 			      $("#guest").click(function(){
                         $("#finance-sub").hide();
@@ -215,14 +187,14 @@ jQuery.noConflict();
 						$("#rate-sub").hide();
 						$("#property-sub").hide();
 						$("#opportunities-sub").hide()
-					    $("#guest-sub").toggle();						 
+					    $("#guest-sub").toggle();
 			   });
 
 
 			   $(".Tennis").click(function(){
-				  
+
                  $("#TennisEquipment").toggle();
-				 
+
 			   });
 			    $('#Tennis').click(function() {
 					if ($(this).is(':checked')) {
@@ -230,23 +202,15 @@ jQuery.noConflict();
 					}
 				});
 
-				
-					
+
+
 					$("#userimg1").change(function(){
 						userimg(this);
-						
-					});
-				// 		$("#hotelimg").change(function(){
 
-				// 			var wrapper = $('.hoimgad'); 
-				//             var fieldHTML = '<div class="col-sm-6 col-md-4"><div class="thumbnail"><img src="images/hotels/hotel-2.jpg" alt="hotel">'+
-				// 			+'<div class="caption text-muted-ali"><a href=""> Edit<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div></div></div> ';
-			    // $(wrapper).append(fieldHTML); 
-						
-						
-				// 	});
-					$("#hotelimg").change(function(){						
-						hotelimg(this);						
+					});
+
+					$("#hotelimg").change(function(){
+						hotelimg(this);
 					});
 					$("#hotelhome").change(function(){
                          hotelhome(this);
@@ -255,8 +219,8 @@ jQuery.noConflict();
                          roomhome(this);
 			         });
 
-				
-						
+
+
 
 					$('#american').click(function(){
 							$('#americancheck1').addClass("glyphicon glyphicon-ok");
@@ -276,49 +240,49 @@ jQuery.noConflict();
 					$("#transport").change(function(){
 						var seats = $("#transport").val();
 					transport(seats);
-				
+
 		         	});
-			
+
             $("#location").click(function(){
                $("#Locaop").slideToggle("slow");
-			    $("#showstar").hide();	
+			    $("#showstar").hide();
 			   $("#showcut").hide();
 			   $("#showeco").hide();
 			});
 			$("#star").click(function(){
                $("#Locaop").hide();
-			   $("#showstar").slideToggle("slow");				   	
+			   $("#showstar").slideToggle("slow");
 			   $("#showcut").hide();
-			   $("#showeco").hide();		  
+			   $("#showeco").hide();
 			});
 
 			$("#customer").click(function(){
                $("#Locaop").hide();
-			   $("#showstar").hide();	
-			   $("#showcut").slideToggle("slow");	
-			    $("#showeco").hide();		  
+			   $("#showstar").hide();
+			   $("#showcut").slideToggle("slow");
+			    $("#showeco").hide();
 			});
 			$("#economy").click(function(){
                $("#Locaop").hide();
-			   $("#showstar").hide();	
+			   $("#showstar").hide();
 			   $("#showcut").hide();
-			   $("#showeco").slideToggle("slow");	
+			   $("#showeco").slideToggle("slow");
 
 			});
 
 			$('#hideTR').click(function(){
 				$('#showTR').show();
 				$('#hideTR').hide();
-			}); 
+			});
 			$('#cancel').click(function(){
                 $('#showTR').hide();
 				$('#hideTR').show();
-			});    
+			});
 
 			$('.addroom2').click(function(){
                  $('#addnewroom').show();
 				 $('#roommain').hide();
-			}); 
+			});
 			$('#editroom').click(function(){
                  $('#roomeditde').show();
 				 $('#roommain').hide();
@@ -327,33 +291,94 @@ jQuery.noConflict();
 			$('.addhotel2').click(function(){
                  $('#addnewhotel').show();
 				 $('#hotelmain').hide();
-			});   
+			});
 			$("#edithotel").click(function(){
                 $("#edithotelshow").show();
 				$('#hotelmain').hide();
-			});    
+			});
+// add new Res type
 
+$("#addResturent").click(function(){
+
+	// var val1 = $("addre").val();
+	var wrapper1 = $('.resview');
+	var num =1;
+	num +=1;
+	// var fieldHTML1 = '<input type="text">';
+	var fieldHTML1 = '<h3>Resturent Types'+ num +'</h3>'
+	+'<div class="col-md-12 col-xs-12 col-sm-12 form-group paddind0">'
+	             + ' <div class="col-md-6 col-sm-6 form-group">'
+						 + '<span>name</span>'
+	               +'<input type="text" ng-model="name" class="form-control" name=""/>'
+
+	              + '</div>'
+
+	+'<div class="col-sm-6 col-xs-12 form-group ">'
+	               + '<span> openTime</span>'
+	              + ' <input type="openTime" ng-model="openTime" name="openTime" placeholder="opentime" id="" class="form-control"/>'
+	             + '</div>'
+
+
+
+
+	+'</div>'
+	+'<div class="col-md-12 col-xs-12 col-sm-12 form-group paddind0">'
+	 +             '<div class="col-md-6 col-sm-6 form-group">'
+	  +             '<span>closingTime</span>'
+	 +              '<input type="text" ng-model="name" class="form-control" name=""/>'
+
+	   +            '</div>'
+
+	+'<div class="col-sm-6 col-xs-12 form-group ">'
+	 +               '<span> thumbnail</span>'
+	 +               '<input type="thumbnail" ng-model="thumbnail" name="thumbnail" placeholder="thumbnail" id="" class="form-control"/>'
+
+	  +            '</div>'
+
+	+'<div class="col-md-12 col-xs-12 col-sm-12 form-group ">'
+	+              '<div class="col-md-6 col-sm-6 form-group paddind0">'
+	   +           ' <span>type</span>'
+	 +              '<input type="text" ng-model="name" class="form-control" name=""/>'
+
+	+'</div>'
+
+	 + '<div class="col-sm-12 col-xs-12 paddind0">'
+	  +              ' <div class="col-sm-8 col-xs-12 form-group paddind0">'
+	    +            '<span> shortDescription</span>'
+
+	       +         '<textarea rows="3" name="short" class="form-control"></textarea>'
+	        +         '</div>'
+	         +     '</div>'
+
+	+'</div>'
+	+'</div>';
+
+		$(wrapper1).append(fieldHTML1);
+
+
+
+});
 
 
 			    //+++++++
 			$("#langu").change(function(){
-				
+
 				var val1 = $("#langu").val();
-				var wrapper = $('.Spoken'); 
+				var wrapper = $('.Spoken');
 				var fieldHTML = '<input type="text" name='+ val1 +' value='+ val1 +' id="" class="form-control"/> ';
-                  
-			    $(wrapper).append(fieldHTML); 
+
+			    $(wrapper).append(fieldHTML);
 				$("#lan").show();
 
-      
+
 			});
-			
 
-     
 
-				// +++++ 
 
-		
+
+				// +++++
+
+
 			$('.rating-lg').each(function(){
 				var val = $(this).data('value');
 				var readonly = true;
@@ -385,7 +410,7 @@ jQuery.noConflict();
 			    var target = event.target || event.srcElement,
 			        link = target.src ? target.parentNode : target,
 			        options = {
-			        	index: link, 
+			        	index: link,
 			        	event: event,
 			        	continuous: false,
 			        	toggleControlsOnSlideClick: false
@@ -394,9 +419,9 @@ jQuery.noConflict();
 			    blueimp.Gallery(links, options);
 			});
 
-			
 
-			if(!isMobileDevice()){				
+
+			if(!isMobileDevice()){
 				$("#stickyForm").sticky({topSpacing:0});
 				$("#stickyNav").sticky({topSpacing:0});
 				$("#stickybut").sticky({bottomSpacing:0});
@@ -405,26 +430,26 @@ jQuery.noConflict();
 					currentClass: 'active',
 					changeHash: false,
 					scrollSpeed: 750,
-				});				
+				});
 			}
-						
 
-		});		
+
+		});
 
 
  function hotelimg(input) {
 						if (input.files && input.files[0]) {
 							var reader = new FileReader();
-							
+
 							reader.onload = function (e) {
 
-									var wrapper = $('.hoimgad'); 
+									var wrapper = $('.hoimgad');
 				            var fieldHTML = ' <div class="col-sm-6 col-md-4"><div class=""><img src="'+ e.target.result +'"  id="hotel" alt="hotel" class="hotimg"><div class="caption "><a href=""> Deletet<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></div><div></div> ';
-			                 $(wrapper).append(fieldHTML); 
+			                 $(wrapper).append(fieldHTML);
 								// $('#hotel').attr('src', e.target.result);
-							
+
 							}
-							
+
 							reader.readAsDataURL(input.files[0]);
 						}
 					}
@@ -437,7 +462,7 @@ jQuery.noConflict();
 							}
 							reader.readAsDataURL(input.files[0]);
 						}
-					} 
+					}
 					// END
 					// Room thum Photo
 					function roomhome(input){
@@ -448,17 +473,17 @@ jQuery.noConflict();
 							}
 							reader.readAsDataURL(input.files[0]);
 						}
-					} 
+					}
 					// END
 					 function userimg(input) {
 						if (input.files && input.files[0]) {
 							var reader = new FileReader();
-							
+
 							reader.onload = function (e) {
 								$('#user').attr('src', e.target.result);
-							
+
 							}
-							
+
 							reader.readAsDataURL(input.files[0]);
 						}
 					}
@@ -482,21 +507,21 @@ switch (seats) {
     case 'Bus':
                     $("#to").show();
 					$("#departs").show();
-					$("#line").show();				
+					$("#line").show();
 					$('#highway').hide();
 					$('#junction').hide();
     break;
     case 'Car':
                 	$("#to").show();
 					$("#departs").hide();
-					$("#line").hide();				
+					$("#line").hide();
 					$('#highway').show();
 					$('#junction').show();
     break;
     case 'Subway/Metro':
                     $("#to").show();
 					$("#departs").show();
-					$("#line").show();				
+					$("#line").show();
 					$('#highway').hide();
 					$('#junction').hide();
    break;
@@ -504,7 +529,7 @@ switch (seats) {
                     $("#othe").hide();
 					$("#to").show();
 					$("#departs").hide();
-					$("#line").hide();				
+					$("#line").hide();
 					$('#highway').hide();
 					$('#junction').hide();
  break;
@@ -512,7 +537,7 @@ switch (seats) {
                     $("#othe").hide();
 					$("#to").show();
 					$("#departs").show();
-					$("#line").hide();				
+					$("#line").hide();
 					$('#highway').hide();
 					$('#junction').hide();
  break;
@@ -520,7 +545,7 @@ switch (seats) {
                     $("#othe").hide();
 					$("#to").show();
 					$("#departs").show();
-					$("#line").show();				
+					$("#line").show();
 					$('#highway').hide();
 					$('#junction').hide();
  break;
@@ -528,7 +553,7 @@ switch (seats) {
                     $("#othe").hide();
 					$("#to").show();
 					$("#departs").hide();
-					$("#line").hide();				
+					$("#line").hide();
 					$('#highway').hide();
 					$('#junction').hide();
  break;
@@ -537,7 +562,7 @@ switch (seats) {
                     $("#othe").hide();
 					$("#to").hide();
 					$("#departs").hide();
-					$("#line").hide();				
+					$("#line").hide();
 					$('#highway').hide();
 					$('#junction').hide();
 }
