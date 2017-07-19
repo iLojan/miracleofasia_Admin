@@ -422,7 +422,8 @@ $(Propertyservices).append(Propertyservices1);
 $("#Propertydetails").click(function(){
 var Propertydetails = $('.Propertydetails');
 num +=1;
-var Propertydetails1 = '<div class="col-md-12 col-xs-12 col-sm-12 form-group">'
+var Propertydetails1 = '<h3>Propertydetails'+ num +'</h3>'
++'<div class="col-md-12 col-xs-12 col-sm-12 form-group">'
 
                +'<div class="col-sm-5 col-xs-12 form-group  checkin">'
                    +'<div class="col-sm-12 col-xs-12  form-grou  paddind0">'
@@ -622,8 +623,8 @@ var Propertydetails1 = '<div class="col-md-12 col-xs-12 col-sm-12 form-group">'
                  + '<div class="col-sm-5 col-xs-12 form-group  Spoken"> <span id="lan" class="pay"> Languages Spoken </span></div>'
              + '</div>'
 
-+'<div class="col-md-12 col-xs-12 Propertydetails"></div>'
-               +'<div class="text-muted-ali"> <p id="Propertydetails">Property details</p></div>'
+
+        
 
                +'</div>'
 
